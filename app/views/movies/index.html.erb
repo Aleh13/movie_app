@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Favorite Movies</title>
+  </head>
+  <body>
+    <h1>My Favorite Movies</h1>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+      </tr>
+      <% @movies.each do |movie| %>
+        <tr>
+          <td><%= movie[:title] %></td>
+          <td><%= movie[:year] %></td>
+        </tr>
+      <% end %>
+    </table>
+  </body>
+</html>
